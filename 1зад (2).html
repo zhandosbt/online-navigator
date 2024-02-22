@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Квадрат</title>
+</head>
+<body>
+    <script>
+        // Создаем объект для хранения данных квадрата
+        var square = {
+            sideLength: parseFloat(prompt("Введите длину стороны квадрата:")),
+            calculatePerimeter: function() {
+                return 4 * this.sideLength;
+            },
+            calculateArea: function() {
+                return this.sideLength * this.sideLength;
+            }
+        };
+
+        // Вычисляем периметр и площадь, выводим результаты
+        var perimeter = square.calculatePerimeter();
+        var area = square.calculateArea();
+        
+        console.log("Периметр квадрата:", perimeter);
+        console.log("Площадь квадрата:", area);
+    </script>
+</body>
+</html>
